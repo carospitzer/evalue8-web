@@ -32,10 +32,10 @@ export default function Page() {
               <p>Thirty minutes on something you are actually working on — a company from your pipeline, a technology you are scouting, a batch you have reviewed. No slides.</p>
               <span className="tl" style={{marginTop:'14px'}}>Pick a time</span>
             </a>
-            <a className="card lc" href="mailto:carolina@evalue8.ai?subject=evalue8%20enquiry" style={{padding:'28px'}}>
+            <a className="card lc" href="mailto:carolin@evalue8.ai?subject=evalue8%20enquiry" style={{padding:'28px'}}>
               <span className="n">03</span><h3>Email us</h3>
               <p>Straight to a person. Security questions welcome — we would rather answer them before a procurement process than during one.</p>
-              <span className="tl" style={{marginTop:'14px'}}>carolina@evalue8.ai</span>
+              <span className="tl" style={{marginTop:'14px'}}>carolin@evalue8.ai</span>
             </a>
           </div>
         </div>
@@ -54,14 +54,14 @@ export default function Page() {
             <p className="cap rv">Founders do not need this — <a className="tl" href="/founders">start free</a>.</p>
           </div>
           <div className="card rv" style={{padding:'30px'}}>
-            <form className="frm" data-form="access" data-mail="carolina@evalue8.ai">
+            <form className="frm" data-form="access" data-mail="carolin@evalue8.ai">
               <div className="f"><label htmlFor="dn">Name</label><input id="dn" name="name" type="text" required /></div>
               <div className="f"><label htmlFor="de">Work email</label><input id="de" name="email" type="email" required /></div>
               <div className="f"><label htmlFor="dc">Organisation</label><input id="dc" name="org" type="text" required /></div>
               <div className="f"><label htmlFor="dq">What are you trying to find out?</label><textarea id="dq" name="question" required placeholder="A market, a technology, a company, a batch of applications…"></textarea></div>
               <button className="btn mint" type="submit">Send request</button>
-              <p className="ok-msg">Opening your mail app with the request ready to send. If nothing happened, write to <a className="tl" href="mailto:carolina@evalue8.ai">carolina@evalue8.ai</a>.</p>
-              <p className="tiny">Goes straight to Carolina. No phone number needed.</p>
+              <p className="ok-msg">Opening your mail app with the request ready to send. If nothing happened, write to <a className="tl" href="mailto:carolin@evalue8.ai">carolin@evalue8.ai</a>.</p>
+              <p className="tiny">Goes straight to Carolin. No phone number needed.</p>
             </form>
           </div>
         </div>
