@@ -26,7 +26,7 @@ export default function Page() {
           <div className="team rv" style={{marginTop:'40px'}}>
             <div className="tm">
               <div className="ph"><img src="/img/tm-carolin.webp" alt="Carolin Spitzer" /></div>
-              <h3>Carolina Spitzer</h3>
+              <h3>Carolin Spitzer</h3>
               <div className="rl">Commercial</div>
               <ul>
                 <li>Researched AI-supported decision-making in venture capital</li>
