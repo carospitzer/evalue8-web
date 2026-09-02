@@ -3,26 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
 
+  // URLs people guess rather than click. /security in particular is what an
+  // enterprise security reviewer types straight into the address bar.
   async redirects() {
     return [
-      // Legacy product URLs
-      { source: '/tool', destination: '/platform', permanent: true },
-      { source: '/tools', destination: '/platform', permanent: true },
-      { source: '/overview', destination: '/home', permanent: true },
-      { source: '/scout', destination: '/platform', permanent: true },
-      { source: '/cockpit', destination: '/platform', permanent: true },
-      { source: '/integration', destination: '/platform', permanent: true },
-      { source: '/profile', destination: '/login', permanent: true },
-
-      // Canonical legal-page URL
-      {
-        source: '/TermsOfService',
-        destination: '/terms-of-service',
-        permanent: true,
-      },
-
-      // Existing website redirects
       { source: '/security', destination: '/trust', permanent: true },
+      { source: '/privacy', destination: '/trust', permanent: true },
       { source: '/product', destination: '/platform', permanent: true },
       { source: '/solutions', destination: '/platform', permanent: true },
       { source: '/index', destination: '/home', permanent: true },
@@ -31,6 +17,7 @@ const nextConfig = {
       { source: '/for/accelerators', destination: '/accelerators', permanent: true },
       { source: '/for/founders', destination: '/founders', permanent: true },
       { source: '/about', destination: '/company', permanent: true },
+      { source: '/scout', destination: '/platform', permanent: true },
       { source: '/team', destination: '/company', permanent: true },
       { source: '/contact', destination: '/get-access', permanent: true },
       { source: '/demo', destination: '/get-access', permanent: true },
