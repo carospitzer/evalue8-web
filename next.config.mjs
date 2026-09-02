@@ -7,6 +7,7 @@ const nextConfig = {
   // enterprise security reviewer types straight into the address bar.
   async redirects() {
     return [
+      { source: '/tools', destination: '/platform', permanent: true },
       { source: '/security', destination: '/trust', permanent: true },
       { source: '/privacy', destination: '/trust', permanent: true },
       { source: '/product', destination: '/platform', permanent: true },
