@@ -8,7 +8,6 @@ const nextConfig = {
   async redirects() {
     return [
       { source: '/security', destination: '/trust', permanent: true },
-      { source: '/privacy', destination: '/trust', permanent: true },
       { source: '/product', destination: '/platform', permanent: true },
       { source: '/solutions', destination: '/platform', permanent: true },
       { source: '/index', destination: '/home', permanent: true },
@@ -17,7 +16,6 @@ const nextConfig = {
       { source: '/for/accelerators', destination: '/accelerators', permanent: true },
       { source: '/for/founders', destination: '/founders', permanent: true },
       { source: '/about', destination: '/company', permanent: true },
-      { source: '/scout', destination: '/platform', permanent: true },
       { source: '/team', destination: '/company', permanent: true },
       { source: '/contact', destination: '/get-access', permanent: true },
       { source: '/demo', destination: '/get-access', permanent: true },
