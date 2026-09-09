@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import EntryBehaviour from '@/components/EntryBehaviour';
+import LogoStrip from '@/components/LogoStrip';
 
 export const metadata: Metadata = {
   title: { absolute: 'evalue8 — Scout. Evaluate. Decide.' },
@@ -70,56 +71,8 @@ export default function Page() {
           </div>
 
           <div className="entry-trust">
-            <div className="tstrip">
-              <span className="tlab">Supported by</span>
-              <div className="mq">
-                <div className="mq-track">
-                  <div className="mq-set">
-                    <img src="/img/lg-eco-unternehmertum.png" alt="UnternehmerTUM" />
-                    <img src="/img/lg-eco-aination.png" alt="AI Nation" />
-                    <img src="/img/lg-eco-tumai.png" alt="TUM.ai" />
-                    <img src="/img/lg-eco-eit.png" alt="EIT Community Supernovas" />
-                    <img src="/img/lg-eco-startupvalley.png" alt="StartupValley" />
-                  </div>
-                  <div className="mq-set">
-                    <img src="/img/lg-eco-unternehmertum.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-eco-aination.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-eco-tumai.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-eco-eit.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-eco-startupvalley.png" alt="" aria-hidden="true" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="tstrip">
-              <span className="tlab">Experience from leading institutions</span>
-              <div className="mq rev slow">
-                <div className="mq-track">
-                  <div className="mq-set">
-                    <img src="/img/lg-inst-tesla.png" alt="Tesla" />
-                    <img src="/img/lg-inst-man.png" alt="MAN" />
-                    <img src="/img/lg-inst-dachser.png" alt="DACHSER" />
-                    <img src="/img/lg-inst-amazon.png" alt="Amazon" />
-                    <img src="/img/lg-inst-utum.png" alt="UnternehmerTUM" />
-                    <img src="/img/lg-inst-augsburg.png" alt="University of Augsburg" />
-                    <img src="/img/lg-inst-cbs.png" alt="Copenhagen Business School" />
-                    <img src="/img/lg-inst-dtu.png" alt="Denmark Technical University" />
-                    <img src="/img/lg-inst-essec.png" alt="ESSEC Business School" />
-                  </div>
-                  <div className="mq-set">
-                    <img src="/img/lg-inst-tesla.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-inst-man.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-inst-dachser.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-inst-amazon.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-inst-utum.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-inst-augsburg.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-inst-cbs.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-inst-dtu.png" alt="" aria-hidden="true" />
-                    <img src="/img/lg-inst-essec.png" alt="" aria-hidden="true" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <LogoStrip set="eco" label="Supported by" />
+            <LogoStrip set="inst" label="Experience from leading institutions" reverse slow />
           </div>
 
           <p className="entry-note">Built in Munich · 10+ pilot partners in Europe</p>
