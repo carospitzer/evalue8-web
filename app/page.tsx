@@ -4,7 +4,7 @@ import EntryBehaviour from '@/components/EntryBehaviour';
 export const metadata: Metadata = {
   title: { absolute: 'evalue8 — Scout. Evaluate. Decide.' },
   description:
-    'One market intelligence platform, four workflows. Choose your starting point: investor, corporate innovation, accelerator or founder.',
+    'An intelligence system that finds, researches and validates companies, founders, technologies and markets — with the evidence behind every claim. Choose your starting point: investor, corporate innovation, accelerator or founder.',
   alternates: { canonical: '/' },
 };
 
@@ -21,9 +21,14 @@ export default function Page() {
         </div>
 
         <div className="entry-mid">
+          <div className="entry-intro">
+            <span className="entry-eyebrow">We are</span>
+            <p>An intelligence system that finds, researches and validates companies, founders, technologies and&nbsp;markets — <span className="hi">with the evidence behind every claim.</span></p>
+          </div>
+
           <div className="entry-head">
             <h1>Who are you?</h1>
-            <p>evalue8 is one market intelligence platform. Four teams use it for four very different decisions. Start with yours.</p>
+            <p>The same intelligence. Four different workflows. Start with yours.</p>
           </div>
 
           <div className="pgrid">
@@ -56,7 +61,10 @@ export default function Page() {
         </div>
 
         <div className="entry-btm">
-          <a href="/home">Explore evalue8 first</a>
+          <div className="entry-out">
+            <span>Not one of these?</span>
+            <a className="entry-explore" href="/home">Explore evalue8 <span className="arrow">→</span></a>
+          </div>
           <p className="entry-note">Built in Munich · 10+ pilot partners in Europe · Supported by UnternehmerTUM, AI Nation and TUM AI E-Lab</p>
         </div>
       </div>
