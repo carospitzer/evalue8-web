@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import EntryBehaviour from '@/components/EntryBehaviour';
+import LogoStrip from '@/components/LogoStrip';
 
 export const metadata: Metadata = {
   title: { absolute: 'evalue8 — Scout. Evaluate. Decide.' },
   description:
-    'One market intelligence platform, four workflows. Choose your starting point: investor, corporate innovation, accelerator or founder.',
+    'An intelligence system that finds, researches and validates companies, founders, technologies and markets — with the evidence behind every claim. Choose your starting point: investor, corporate innovation, accelerator or founder.',
   alternates: { canonical: '/' },
 };
 
@@ -21,9 +22,14 @@ export default function Page() {
         </div>
 
         <div className="entry-mid">
+          <div className="entry-intro">
+            <span className="entry-eyebrow">We are</span>
+            <p>An intelligence system that finds, researches and validates companies, founders, technologies and&nbsp;markets — <span className="hi">with the evidence behind every claim.</span></p>
+          </div>
+
           <div className="entry-head">
             <h1>Who are you?</h1>
-            <p>evalue8 is one market intelligence platform. Four teams use it for four very different decisions. Start with yours.</p>
+            <p>The same intelligence. Four different workflows. Start with yours.</p>
           </div>
 
           <div className="pgrid">
@@ -56,8 +62,20 @@ export default function Page() {
         </div>
 
         <div className="entry-btm">
-          <a href="/home">Explore evalue8 first</a>
-          <p className="entry-note">Built in Munich · 10+ pilot partners in Europe · Supported by UnternehmerTUM, AI Nation and TUM AI E-Lab</p>
+          <div className="entry-out">
+            <span>Not one of these?</span>
+            <a className="entry-explore" href="/home">Explore evalue8 <span className="arrow">→</span></a>
+            <a className="entry-li" href="https://www.linkedin.com/company/evalue8ai" target="_blank" rel="noopener noreferrer" aria-label="evalue8 on LinkedIn" title="Connect on LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1t2.48 2.5zM.22 8.02h4.56V24H.22zM8.34 8.02h4.37v2.18h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 6.99V24h-4.56v-7.28c0-1.74-.03-3.98-2.42-3.98-2.42 0-2.79 1.89-2.79 3.85V24H8.34z" /></svg>
+            </a>
+          </div>
+
+          <div className="entry-trust">
+            <LogoStrip set="eco" label="Supported by" />
+            <LogoStrip set="inst" label="Experience from leading institutions" reverse slow />
+          </div>
+
+          <p className="entry-note">Built in Munich · 10+ pilot partners in Europe</p>
         </div>
       </div>
       <EntryBehaviour />
