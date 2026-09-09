@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import LogoStrip from '@/components/LogoStrip';
 
 export const metadata: Metadata = {
   title: 'Company & team',
@@ -60,6 +61,7 @@ export default function Page() {
               <p className="tiny" style={{marginTop:'12px'}}>Three Ironman finishes, and the training discipline shows up in how he ships.</p>
             </div>
           </div>
+          <LogoStrip set="inst" label="Experience from leading institutions" tone="light" slow className="rv" />
         </div>
       </section>
 
@@ -81,12 +83,13 @@ export default function Page() {
           <span className="eyebrow rv">Ecosystem</span>
           <h2 className="h2 w rv">Working across Europe's innovation ecosystem</h2>
           <p className="lede rv">Programmes, communities and collaborations we have been part of on the way here.</p>
+          <LogoStrip set="eco" tone="light" className="rv" />
           <div className="eco rv">
             <span>UnternehmerTUM</span><span>TUM.ai</span><span>TUM Incubator</span><span>ZOLLHOF</span>
             <span>Pioneers Club</span><span>Freiraum Ventures</span><span>AI Nation</span>
             <span>EIT Community Supernovas</span><span>StartupValley</span>
           </div>
-          <p className="cap rv">Named with permission and without implying a customer relationship. Official logos replace this strip once we have the assets.</p>
+          <p className="cap rv">Named with permission and without implying a customer relationship.</p>
         </div>
       </section>
 
