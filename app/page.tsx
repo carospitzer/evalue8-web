@@ -64,8 +64,65 @@ export default function Page() {
           <div className="entry-out">
             <span>Not one of these?</span>
             <a className="entry-explore" href="/home">Explore evalue8 <span className="arrow">→</span></a>
+            <a className="entry-li" href="https://www.linkedin.com/company/evalue8ai" target="_blank" rel="noopener noreferrer" aria-label="evalue8 on LinkedIn" title="Connect on LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1t2.48 2.5zM.22 8.02h4.56V24H.22zM8.34 8.02h4.37v2.18h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 6.99V24h-4.56v-7.28c0-1.74-.03-3.98-2.42-3.98-2.42 0-2.79 1.89-2.79 3.85V24H8.34z" /></svg>
+            </a>
           </div>
-          <p className="entry-note">Built in Munich · 10+ pilot partners in Europe · Supported by UnternehmerTUM, AI Nation and TUM AI E-Lab</p>
+
+          <div className="entry-trust">
+            <div className="tstrip">
+              <span className="tlab">Supported by</span>
+              <div className="mq">
+                <div className="mq-track">
+                  <div className="mq-set">
+                    <img src="/img/lg-eco-unternehmertum.png" alt="UnternehmerTUM" />
+                    <img src="/img/lg-eco-aination.png" alt="AI Nation" />
+                    <img src="/img/lg-eco-tumai.png" alt="TUM.ai" />
+                    <img src="/img/lg-eco-eit.png" alt="EIT Community Supernovas" />
+                    <img src="/img/lg-eco-startupvalley.png" alt="StartupValley" />
+                  </div>
+                  <div className="mq-set">
+                    <img src="/img/lg-eco-unternehmertum.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-eco-aination.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-eco-tumai.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-eco-eit.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-eco-startupvalley.png" alt="" aria-hidden="true" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="tstrip">
+              <span className="tlab">Experience from leading institutions</span>
+              <div className="mq rev slow">
+                <div className="mq-track">
+                  <div className="mq-set">
+                    <img src="/img/lg-inst-tesla.png" alt="Tesla" />
+                    <img src="/img/lg-inst-man.png" alt="MAN" />
+                    <img src="/img/lg-inst-dachser.png" alt="DACHSER" />
+                    <img src="/img/lg-inst-amazon.png" alt="Amazon" />
+                    <img src="/img/lg-inst-utum.png" alt="UnternehmerTUM" />
+                    <img src="/img/lg-inst-augsburg.png" alt="University of Augsburg" />
+                    <img src="/img/lg-inst-cbs.png" alt="Copenhagen Business School" />
+                    <img src="/img/lg-inst-dtu.png" alt="Denmark Technical University" />
+                    <img src="/img/lg-inst-essec.png" alt="ESSEC Business School" />
+                  </div>
+                  <div className="mq-set">
+                    <img src="/img/lg-inst-tesla.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-inst-man.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-inst-dachser.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-inst-amazon.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-inst-utum.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-inst-augsburg.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-inst-cbs.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-inst-dtu.png" alt="" aria-hidden="true" />
+                    <img src="/img/lg-inst-essec.png" alt="" aria-hidden="true" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p className="entry-note">Built in Munich · 10+ pilot partners in Europe</p>
         </div>
       </div>
       <EntryBehaviour />
