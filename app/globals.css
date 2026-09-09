@@ -177,6 +177,7 @@ p{margin:0 0 15px;max-width:60ch}
 .mq:hover .mq-track{animation-play-state:paused}
 .mq-set{display:flex;align-items:center;gap:46px;padding-right:46px;flex:none}
 .mq-set img{max-height:26px;max-width:118px;width:auto;height:auto;opacity:.58;flex:none}
+.mq-set img.cmp{max-height:32px}
 .tstrip.light .tlab{color:var(--ink-3)}
 .tstrip.light .mq-set img{filter:invert(1);opacity:.5}
 .tstrip.light + .eco{margin-top:36px}
