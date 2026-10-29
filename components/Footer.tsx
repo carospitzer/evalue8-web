@@ -35,7 +35,7 @@ export default function Footer() {
             </ul></div>
           </div>
           <div className="ftr-btm">
-            <span>© 2026 evalue8</span><span>Munich, Germany</span><a href="mailto:carolina@evalue8.ai">carolina@evalue8.ai</a>
+            <span>© 2026 evalue8</span><span>Munich, Germany</span><a href="mailto:carolin@evalue8.ai">carolin@evalue8.ai</a>
             <span className="sp">Design prototype — product screenshots are real, example queries are illustrative</span>
           </div>
         </div>

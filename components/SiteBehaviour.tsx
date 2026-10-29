@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { attachForms } from './forms';
 
 /**
  * All client-side behaviour for the site chrome, attached once on mount:
@@ -161,41 +162,14 @@ export default function SiteBehaviour() {
       if ((e as KeyboardEvent).key === 'Escape') { closeMega(); closeSheet(); }
     });
 
-    /* ── forms ──
-       A form carrying data-mail composes a real message to that address in the
-       visitor's own mail client: a genuine destination with no backend, no third
-       party and nothing silently dropped. To move to a hosted form service or an
-       API route later, replace this block — the markup stays as it is. */
-    document.querySelectorAll<HTMLFormElement>('form[data-form]').forEach((f) => {
-      on(f, 'submit', (e) => {
-        e.preventDefault();
-        const mail = f.getAttribute('data-mail');
-        if (mail) {
-          const lines: string[] = [];
-          f.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>(
-            'input[name],textarea[name]'
-          ).forEach((el) => {
-            if (!el.value) return;
-            const lab = f.querySelector(`label[for="${el.id}"]`);
-            lines.push(`${lab ? lab.textContent?.trim() : el.name}:\n${el.value}`);
-          });
-          const subject = `evalue8 — ${f.getAttribute('data-subject') || 'access request'}`;
-          window.location.href =
-            `mailto:${mail}?subject=${encodeURIComponent(subject)}` +
-            `&body=${encodeURIComponent(lines.join('\n\n'))}`;
-        }
-        const msg = f.querySelector('.ok-msg') || f.parentElement?.querySelector('.ok-msg');
-        msg?.classList.add('on');
-        const btn = f.querySelector<HTMLButtonElement>('button[type=submit]');
-        if (btn) { btn.disabled = true; btn.style.opacity = '0.55'; }
-      });
-    });
+    /* ── forms ── posted to /api/contact, mail-app fallback (see components/forms.ts) */
+    attachForms(document, on);
 
     /* ── Book a demo ──
-       Set NEXT_PUBLIC_BOOKING_URL (Cal.com, Google Calendar appointment page,
-       whatever you use) and this button points at it. Until it is set, the button
-       falls back to the request form on the same page, so it is never a dead end. */
-    const booking = process.env.NEXT_PUBLIC_BOOKING_URL;
+       Points at Carolin's Google Calendar booking page. NEXT_PUBLIC_BOOKING_URL
+       overrides it if the scheduling link ever changes. */
+    const booking =
+      process.env.NEXT_PUBLIC_BOOKING_URL || 'https://calendar.app.google/3c78DLWLm9szETS67';
     const bookBtn = document.getElementById('book-demo');
     if (bookBtn && booking) {
       bookBtn.setAttribute('href', booking);
