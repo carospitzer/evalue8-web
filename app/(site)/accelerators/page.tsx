@@ -208,12 +208,12 @@ export default function Page() {
             <p className="rv">Send us your criteria and a previous cohort's applications. We'll run them and show you what a consistent review would have surfaced — including whether it agrees with the choices you made.</p>
           </div>
           <div className="rv">
-            <form className="frm" data-form="pilot" data-mail="carolina@evalue8.ai" data-subject="accelerator pilot request">
+            <form className="frm" data-form="pilot" data-mail="carolin@evalue8.ai" data-subject="evalue8 — accelerator pilot request">
               <div className="f"><label htmlFor="ab1">When does your next batch open?</label><input id="ab1" name="batch" type="text" required placeholder="e.g. March 2027" /></div>
               <div className="f"><label htmlFor="ab2">Applications expected</label><input id="ab2" name="volume" type="text" required placeholder="e.g. 300–500" /></div>
               <div className="f"><label htmlFor="ab3">Work email</label><input id="ab3" name="email" type="email" required placeholder="you@program.org" /></div>
               <button className="btn mint" type="submit">Request a pilot</button>
-              <p className="ok-msg">Opening your mail app with the request ready to send. If nothing happened, write to <a className="tl" href="mailto:carolina@evalue8.ai">carolina@evalue8.ai</a>.</p>
+              <p className="ok-msg" aria-live="polite"></p>
             </form>
           </div>
         </div>
