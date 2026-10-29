@@ -199,11 +199,11 @@ export default function Page() {
             <p className="rv">Not a demo script — your actual scouting question, run through the product. If it's useful we'll talk. If it isn't, you still have the answer.</p>
           </div>
           <div className="rv">
-            <form className="frm" data-form="cq" data-mail="carolina@evalue8.ai" data-subject="a scouting question">
+            <form className="frm" data-form="cq" data-mail="carolin@evalue8.ai" data-subject="evalue8 — a scouting question">
               <div className="f"><label htmlFor="cq1">Your question</label><textarea id="cq1" name="question" required placeholder="How can we reduce energy consumption in industrial drying processes?"></textarea></div>
               <div className="f"><label htmlFor="cq2">Work email</label><input id="cq2" name="email" type="email" required placeholder="you@company.com" /></div>
               <button className="btn mint" type="submit">Send the question</button>
-              <p className="ok-msg">Opening your mail app with the question ready to send. If nothing happened, write to <a className="tl" href="mailto:carolina@evalue8.ai">carolina@evalue8.ai</a>.</p>
+              <p className="ok-msg" aria-live="polite"></p>
             </form>
           </div>
         </div>
