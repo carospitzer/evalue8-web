@@ -184,11 +184,20 @@ under the browser's jump.
 
 ## Forms and the demo booking
 
-Forms have a real production destination and need no service to work: on submit,
-`SiteBehaviour.tsx` composes the message and opens the visitor's mail client
-addressed to **carolina@evalue8.ai**. Nothing is silently dropped and no third
-party is involved. Look for `form[data-form][data-mail]`; to move to a hosted
-form or an API route later, replace that one block — the markup stays.
+Every form posts to `/api/contact` (`app/api/contact/route.ts`), which emails the
+request through the STRATO mailbox straight into **carolin@evalue8.ai** — the
+same setup as chilipick.de. Set in Vercel → Settings → Environment Variables:
+
+```bash
+SMTP_USER=carolin@evalue8.ai     # STRATO mailbox that sends
+SMTP_PASS=…                      # that mailbox's password
+NOTIFY_TO=carolin@evalue8.ai     # optional, where requests go
+```
+
+If the variables are missing or sending fails, the form falls back to opening
+the visitor's mail app with the message ready (the old behaviour), so nothing
+is lost. Client logic lives in `components/forms.ts`. `/foundry` (Clean Tech
+Foundry) is a standalone page with its own styles in `app/foundry/`.
 
 **Book a demo** on `/get-access` reads `NEXT_PUBLIC_BOOKING_URL`:
 
@@ -197,9 +206,7 @@ form or an API route later, replace that one block — the markup stays.
 NEXT_PUBLIC_BOOKING_URL=https://cal.com/your-handle/30min
 ```
 
-Set it and the button opens your scheduling page in a new tab. Leave it unset and
-the button falls back to the request form on the same page — so it is never a
-dead end either way. `.env.example` documents this.
+It overrides the default, Carolin's Google Calendar booking page. `.env.example` documents this.
 
 ## Fonts
 
