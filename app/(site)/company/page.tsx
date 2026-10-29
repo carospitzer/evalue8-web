@@ -128,7 +128,7 @@ export default function Page() {
             </div>
             <div className="card" style={{marginTop:'16px'}}>
               <span className="n">Get in touch</span>
-              <p><a className="tl" href="mailto:carolina@evalue8.ai">carolina@evalue8.ai</a> — Carolina, commercial<br /><a className="tl" href="mailto:sebastian@evalue8.ai">sebastian@evalue8.ai</a> — Sebastian, product</p>
+              <p><a className="tl" href="mailto:carolin@evalue8.ai">carolin@evalue8.ai</a> — Carolin, commercial<br /><a className="tl" href="mailto:sebastian@evalue8.ai">sebastian@evalue8.ai</a> — Sebastian, product</p>
             </div>
           </div>
         </div>
