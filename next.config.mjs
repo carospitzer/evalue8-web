@@ -25,6 +25,16 @@ const nextConfig = {
     ];
   },
 
+  // /foundry lives in its own repo (carospitzer/clean-tech-foundry) and its own
+  // Vercel project, built with basePath '/foundry'. Forward it there so the page
+  // stays at www.evalue8.ai/foundry. The forms on it still post to /api/contact here.
+  async rewrites() {
+    return [
+      { source: '/foundry', destination: 'https://clean-tech-foundry.vercel.app/foundry' },
+      { source: '/foundry/:path*', destination: 'https://clean-tech-foundry.vercel.app/foundry/:path*' },
+    ];
+  },
+
   async headers() {
     return [
       {
